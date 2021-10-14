@@ -6,6 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,700;0,800;1,700;1,800&display=swap');
 
+
 /* ======================= General ======================= */
 
 * {
@@ -14,6 +15,7 @@
     box-sizing: border-box;
 }
 
+
 /* ---------- Farben und Schriften ---------- */
 /* 
 #042A5A, #F4C4C4, #282B29, #7D2222, #DEB873, #D2D2D2, #388883
@@ -21,7 +23,6 @@
 
     font-family: 'Open Sans', sans-serif;
     font-family: Athene;  
-f   ont-family: 'Playfair Display', serif;
 */
 
 
@@ -40,7 +41,6 @@ h1 {
 }
 
 
-
 /* ======================= HEADER ======================= */
 
 header {
@@ -48,147 +48,178 @@ header {
     color: #042A5A;
 }
 
-header div:nth-of-type(1) {
+
+header nav {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1.55rem;
+    letter-spacing: -8%;
+    line-height: 25px;
     border-bottom: 1px solid #042A5A;
     position: fixed;
-    height: 10vh;
+    width: 100vw;
 }
 
-header div:nth-of-type(1) nav {
-    padding: 2vh 10vw;
-    font-size: 1.8rem;
-
-}
-
-/* header>div:nth-of-type(1) nav>div:nth-of-type(1) {
-    text-align: left;
+header nav p {
     display: inline-block;
-    color: #042A5A;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.8rem;
-} */
+    width: 45%;
+    padding: 6.5px 1.5vw 7px 10vw;
+}
 
-/* header>div:nth-of-type(1) nav>div:nth-of-type(2) {
+header nav p:nth-of-type(2) {
     text-align: right;
-    display: inline-block;
-    color: #042A5A;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.8rem;
-} */
-
-
-header > div nav div:nth-of-type(1) {
-    display: inline-block;
-    text-align: left; 
 }
-
-header > div nav div:nth-of-type(2) {
-    display: inline-block;
-    text-align: right; 
-}
-
-
-
 
 
 header h1 {
-    /* margin-left: 10%;
-    margin-right: 20%; */
-    /* margin-bottom: 20vh; */
-    padding-top: 15vh;
     text-align: center;
+    border-bottom: 1px solid #042A5A;
+    margin: 0 10vh;
+}
+header section h1:nth-of-type(1) {
+    padding-top: 100px;
 }
 
-header hr {
-    display: block;
-    /* color: #042A5A;  */
-    margin: 0 auto;
-    width: 1152px;
-    /* height: 1px; */
-    margin-bottom: 25vh; 
-    border-style: inset;
+header section h1:nth-of-type(2) span {
+    letter-spacing: -15px;
 }
 
 
+/* ------------ Bild ------------ */
 
-header div:nth-of-type(2) {
-    text-align: center;
-}
 
-header div img {
+header img {
     height: 602px; 
+    width: 401px;
+    padding-top: 5vh;
 }
 
-header div:nth-of-type(3) {
-    margin-left: 30%;
-    padding-bottom: 30vh;
+header section div:nth-of-type(1) {
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+
+/* ------------ Bildunterschrift ------------ */
+
+
+header section div:nth-of-type(2) {
+    padding-bottom: 20vh;
+    max-width: 400px;
+	margin: 0 auto;
+}
+
+header section div:nth-of-type(2) p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+header section div:nth-of-type(2) p span {
+    font-family: Athene;
+    font-size: 2.4rem;
     text-transform: uppercase;
 }
 
 
-header div:nth-of-type(3) p:nth-last-of-type(1) {
-    font-family: Athene;
-    font-size: 2.4rem;
-}
-
-header div:nth-of-type(3) p:nth-last-of-type(2) {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2.4rem;
-}
-
-header span {
-    letter-spacing: -20px;
-}
-
-
-
-
-
-
-
 
 /* ======================= MAIN 1 ======================= */
+
 
 main:nth-of-type(1) {
     background-color: #F4C4C4;
 }
 
 main:nth-of-type(1) > p:nth-of-type(1) {
-    text-align: right;
-    padding-top: 100px;
-    font-size: 1.6rem;
-    margin-right: 120px;
+    text-align: left;
+    padding-top: 98px;
+    font-size: 1.55rem;
+    padding-left: 120px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
 }
-
 
 main:nth-of-type(1) h2 {
     font-size: 16rem;
+    color: #282B29;
     font-weight: 400;
     font-family: Athene;
     line-height: 200px;
     margin-top: 50px;
 }
 
-main:nth-of-type(1) div {
-    width: 500px;
-    margin: 100px 95px 0 auto;
+main:nth-of-type(1) div:nth-of-type(1) {
+    width: 535px;
+    height: 180px;
+    margin: 25px 95px 125px 810px;
 }
 
 main:nth-of-type(1) div>p {
-    font-size: 2.4rem;
+    font-size: 1.7rem;
     font-family: 'Open Sans', sans-serif;
+    color: #282B29;
+    letter-spacing: -2%;
+    line-height: 36px;
+    font-weight: lighter;
+    text-align: left;
 }
-
 
 /* ---------- TABLE ---------- */
 
 main:nth-of-type(1) table {
     text-align: right;
+    padding-left: 742px;
+    padding-right: 80px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #282B29;
+    font-weight: lighter;
+}
 
+table tr th {
+    font-weight: normal;
+    text-align: right;
 }
 
 
+table tr td {
+    margin: 0;
+    padding: 10px 0 10px 0; 
+}
+
+tr:nth-of-type(1) {
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+tr td:nth-of-type(1) {
+	padding-right: 25px;
+    font-size: 1.2rem;
+}
+
+tr td:nth-of-type(2) {
+	width: 60%;
+    font-size: 2.1rem;
+    text-align: left;
+}
+
+tr td:nth-of-type(3) {
+	text-align: right;
+    font-size: 1.2rem;
+    width: 30%;
+}
+
+th {
+	border-bottom: 1px solid black;
+}
+
+td {
+	border-bottom: 1px solid black;
+}
 
 
 /* ---------- Logo ---------- */
@@ -196,18 +227,15 @@ main:nth-of-type(1) table {
 main:nth-of-type(1) div {
     text-align: right;
     color: black;
-    margin-right: 120px;
+    margin-right: 95px;
+    margin-top: 95px;
     padding-bottom: 15vh;
     
 }
 main:nth-of-type(1) div img {
-    width: 80px;
+    width: 120px;
+    height: 120px;
 }
-
-
-
-
-
 
 
 /* ======================= MAIN 2 ======================= */
@@ -223,8 +251,8 @@ main:nth-of-type(2) > h2, h3 {
 main:nth-of-type(2) > p:nth-of-type(1) {
     text-align: right;
     font-family: 'Open Sans', sans-serif;
-    padding-top: 10vh;
-    font-size: 1.6rem;
+    padding-top: 120px;
+    font-size: 1.55rem;
     color: #7D2222;
     margin-right: 120px;
     margin-top: 0;
@@ -245,11 +273,14 @@ main:nth-of-type(2) div>p {
 }
 
 main:nth-of-type(2) div>p {
-    font-size: 2.4rem;
+    font-size: 1.7rem;
     color: #7D2222;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     margin-left: 95px;
+    letter-spacing: -2%;
+    line-height: 36px;
+    font-weight: lighter;
 }
 
 
@@ -325,7 +356,6 @@ main:nth-of-type(2) article:nth-of-type(3) h3:nth-of-type(2)::first-letter {
 
 
 main:nth-of-type(2) article:nth-of-type(3) h3 span {
-    color: lightseagreen;
     font-weight: 700;
     font-style: italic;
 }
@@ -348,27 +378,6 @@ main:nth-of-type(2) article:nth-of-type(4) h3 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ======================= FOOTER ======================= */
 
 footer {
@@ -381,7 +390,7 @@ footer p {
 }
 
 footer>p:nth-of-type(1) {
-    font-size: 1.6rem;
+    font-size: 1.55rem;
     margin-left: 115px;
     padding-top: 100px;
 }
@@ -397,18 +406,20 @@ footer h2 {
 
 footer div {
     margin-left: 470px;
-    width: 500px;
+    width: 440px;
 }
 
 footer>div>p {
     font-size: 2.4rem;
     line-height: 48px;
+    font-weight: lighter;
 }
 
 footer ul {
     text-align: right;
     margin-right: 120px;
     padding-bottom: 10vh;
+    padding-top: 100px;
 }
 
 footer ul li {
@@ -416,7 +427,7 @@ footer ul li {
     list-style: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 2.4rem;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 48px;
 
 
